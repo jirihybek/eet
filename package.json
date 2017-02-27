@@ -1,8 +1,8 @@
 {
   "name": "eet-es5",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Node.js knihovna pro EET - fork pro ES5",
-  "main": "dist/index.js",
+  "main": "dist/lib/index.js",
   "scripts": {
     "test": "ava dist/test/tests.js",
     "build": "babel . --presets babel-preset-es2015 --out-dir dist --ignore node_modules,dist; cp -r ./test/keys ./dist/test/; cp -r ./wsdl ./dist/",
