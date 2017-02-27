@@ -2,6 +2,14 @@
 
 Node.js knihovna pro EET ([elektronickou evidenci tržeb](http://www.etrzby.cz/cs/technicka-specifikace)).
 
+---
+
+Fork z originálního modulu [eet](https://www.npmjs.com/package/eet) / [JakubMrozek/eet](https://github.com/JakubMrozek/eet) od Jakuba Mrozka.
+
+Přidána podpora pro ES5 pomocí Babel.
+
+---
+
 *Upozornění: balíček ve vývoji (verze 0.x). API se sice už měnit nebude, nicméně chybí především více testů a dokumentace. Pull requesty samozřejmě uvítám.*
 
 ## Instalace 
@@ -83,6 +91,9 @@ Na 99% půjde o problém s certifikátem, více je popsáno v issue [#1](https:/
 
 
 ## Changelog
+
+### v0.6.1 (27. 2. 2017)
+- doplněna kompilace do ES5 pomocí Babel
 
 ### v0.6 (6. 2. 2017)
 - doplněna volba `options.offline`

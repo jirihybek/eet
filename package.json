@@ -1,14 +1,16 @@
 {
-  "name": "eet",
-  "version": "0.6.0",
-  "description": "Node.js knihovna pro EET.",
-  "main": "index.js",
+  "name": "eet-es5",
+  "version": "0.6.1",
+  "description": "Node.js knihovna pro EET - fork pro ES5",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "ava test/tests.js"
+    "test": "ava dist/test/tests.js",
+    "build": "babel . --presets babel-preset-es2015 --out-dir dist --ignore node_modules,dist; cp -r ./test/keys ./dist/test/; cp -r ./wsdl ./dist/",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JakubMrozek/eet.git"
+    "url": "git+https://github.com/jirihybek/eet.git"
   },
   "keywords": [
     "eet",
@@ -22,11 +24,13 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JakubMrozek/eet/issues"
+    "url": "https://github.com/jirihybek/eet/issues"
   },
-  "homepage": "https://github.com/JakubMrozek/eet#readme",
+  "homepage": "https://github.com/jirihybek/eet#readme",
   "devDependencies": {
-    "ava": "^0.16.0"
+    "ava": "^0.16.0",
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0"
   },
   "dependencies": {
     "soap": "^0.17.0",
