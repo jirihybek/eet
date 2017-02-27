@@ -1,6 +1,6 @@
 {
   "name": "eet-es5",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Node.js knihovna pro EET - fork pro ES5",
   "main": "dist/index.js",
   "scripts": {
