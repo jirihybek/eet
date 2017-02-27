@@ -92,7 +92,7 @@ Na 99% půjde o problém s certifikátem, více je popsáno v issue [#1](https:/
 
 ## Changelog
 
-### v0.6.3 (27. 2. 2017)
+### v0.6.4 (27. 2. 2017)
 - doplněna kompilace do ES5 pomocí Babel
 
 ### v0.6 (6. 2. 2017)
